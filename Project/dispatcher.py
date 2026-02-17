@@ -32,7 +32,7 @@ class Dispatcher:
             flight.full_info()
 
     def print_flights(self):
-        print('\n' + '=' * 50)
+        print('\n' + '=' * 100)
 
         if len(self.flights) == 0:
             print('Запланированных рейсов пока нет')
@@ -42,7 +42,7 @@ class Dispatcher:
         for i in range(len(self.flights)):
             print(f'{i + 1}. {self.flights[i].show_info()}')
 
-        print('=' * 50)
+        print('=' * 100)
 
     def print_menu(self):
         print('\nМеню:')
@@ -56,7 +56,7 @@ class Dispatcher:
         plane.distribute(passengers)
         return Flight(route, passengers, plane)
     def create_route(self):
-        print('\n [Шаг 1] Создание маршрута')
+        print('\n[Шаг 1] Создание маршрута')
         from_city = input('Город вылета: ').strip()
         to_city = input('Город прилета: ').strip()
 
@@ -65,7 +65,7 @@ class Dispatcher:
     def sell_tickets(self, route):
         print('\n[Шаг 2] Продажа билетов')
         passengers = random.randint(20, 420)
-        print(f'На маршрут {route} купили ьилеты: {passengers} пассажиров.')
+        print(f'На маршрут {route} купили билеты: {passengers} пассажиров.')
 
         return passengers
 

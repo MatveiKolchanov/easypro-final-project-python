@@ -1,3 +1,3 @@
+from Project.dispatcher import Dispatcher
 
-class Main:
-    pass
+Dispatcher().run()

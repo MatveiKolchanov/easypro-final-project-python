@@ -5,9 +5,4 @@ class Route:
         self.to_city = to_city
 
     def __str__(self):
-        return self.from_city, self.to_city
-
-
-
-
-
+        return f"{self.from_city} -> {self.to_city}"
