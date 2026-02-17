@@ -68,7 +68,8 @@ class Dispatcher:
         plane = Plane()
 
         if mode == '1':
-            
+            capacity = int(input('Вместимость одной секции от 10 до 70'))
+            name = input('Название секции (эконом): ')
 
     def choose_plane_mode(self):
         print('1. Все секции одинаковой вместимости')
